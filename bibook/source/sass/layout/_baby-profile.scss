@@ -1,0 +1,356 @@
+.card-bg {
+  background-color: $white;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-green {
+  background-color: $green;
+}
+
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.profile-titlelist {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.profile-baby {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 30px 10px 15px;
+
+  &--active {
+    border-left: 10px solid $purple;
+  }
+
+  &__img {
+    width: 55px;
+    height: 55px;
+    background: url('../images/profile-avar.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin: 0;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  &__icon {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+.profile-general {
+  padding: 20px;
+}
+
+.profile-list {
+  &__svg {
+    fill: none;
+    stroke-width: 8;
+    width: 100px;
+    height: 100px;
+  }
+
+  &__bg-circle {
+    stroke: $grey;
+  }
+
+  &__circle-inside {
+
+    &--green {
+      stroke: $green-2;
+    }
+
+    &--orange {
+      stroke: $orange-2;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    position: relative;
+    margin: 0 40px;
+
+    @include respond-to ('tablet-and-down') {
+      margin: 0 5px;
+    }
+
+    .cl-green {
+      color: $green-2;
+    }
+
+    .cl-orange {
+      color: $orange-2;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__percent {
+    font-size: 30px;
+  }
+
+  &__wrap {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  &__label-text {
+    font-weight: 700;
+  }
+
+  &__block {
+    display: inline-block;
+  }
+}
+
+.profile-bar {
+  padding: 20px;
+
+  @include respond-to ('tablet-and-down') {
+    padding-bottom: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    @include respond-to ('tablet-and-down') {
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    width: 15%;
+    margin: 0;
+
+    @include respond-to ('phone-and-down') {
+      width: 18%;
+    }
+  }
+
+  &__progress {
+    border-radius: 40px;
+  }
+
+  &__blah {
+    width: 50%;
+  }
+
+  &__progress-bar {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+  &__rate {
+    width: 20%;
+    margin: 0;
+    margin-left: 10px;
+
+    @include respond-to ('phone-and-down') {
+      width: 27%;
+    }
+  }
+
+  &__practice {
+    width: 15%;
+    color: $blue;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @include respond-to ('tablet-and-down') {
+      display: none;
+    }
+  }
+
+  &__practice-mobile {
+    display: none;
+    width: 15%;
+    color: $blue;
+    text-decoration: underline;
+    margin-top: 10px;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @include respond-to ('tablet-and-down') {
+      display: block;
+      height: 35px;
+      width: 120px;
+      color: purple;
+      background-color: $grey;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      text-decoration: none;
+      text-align: center;
+      line-height: 35px;
+    }
+  }
+
+  &__button {
+    color: $blue;
+    display: inline-block;
+    height: 44px;
+    background-color: $grey;
+    line-height: 44px;
+    padding: 0 20px;
+    text-decoration: underline;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    @include respond-to ('tablet-and-down') {
+      display: block;
+      background-color: $white;
+      text-decoration: none;
+      border-top: 1px solid $grey;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+}
+
+.profile-chart {
+  padding: 50px 20px;
+
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+
+  &__title {
+    margin-top: 20px;
+  }
+
+  &__legend {
+    width: 44px;
+    height: 8px;
+  }
+
+  &__tick {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__label {
+    margin: 0;
+    margin-left: 15px;
+  }
+
+  &__title {
+    color: $purple;
+  }
+}
+
+.profile-comment {
+  padding: 20px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  i {
+    margin-top: 13px;
+    margin-right: 10px;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    @include respond-to ('tablet-and-down') {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 49%;
+    color: $white;
+    height: 65px;
+    border-radius: 4px;
+    line-height: 65px;
+    text-align: center;
+    transition: .4s;
+
+    @include respond-to ('tablet-and-down') {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      color: $white;
+      opacity: .8;
+      transition: .4s;
+    }
+
+    &--purple {
+      background-color: $purple;
+    }
+
+    &--orange {
+      background-color: $orange;
+    }
+  }
+}

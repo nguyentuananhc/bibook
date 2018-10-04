@@ -6,6 +6,12 @@
       },{
         "title": "header",
         "url": "header"
+      },{
+        "title": "2 - Profile",
+        "url": "2-profile"
+      },{
+        "title": "3 - Baby Profile",
+        "url": "3-baby-profile"
       }
     ]
   }

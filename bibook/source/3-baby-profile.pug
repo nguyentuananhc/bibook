@@ -1,0 +1,313 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+
+doctype html
+html
+  +head
+  body
+    +header
+    a(href="#!")
+      .breadcrumb-custom
+        .breadcrumb-custom__wrap.container
+          i.fa.fa-chevron-left
+          p Chi tiết bé
+      .container
+        .row
+          .col-md-4
+            .profile.mobile-hide
+              .profile-card
+                .profile-card__header
+                  .profile-card__img
+                    .profile-card__photo-icon
+                      i.fa.fa-camera
+                  .profile-card__left
+                    h1.profile-card__name Nguyễn Thành Trung
+                    .profile-card__button
+                      a.profile-card__logout(href="#!")
+                        span
+                          i.fa.fa-power-off
+                        | Log out
+                      a.profile-card__cog(href="#!")
+                        span
+                          i.fa.fa-cog
+                .profile-card__body
+                  .profile-card__line
+                    p.profile-card__bold Tuổi
+                    p 30 tuổi
+                  .profile-card__line
+                    p.profile-card__bold Địa chỉ:
+                    p Hoàn Kiếm, Hà Nội
+                  .profile-card__line
+                    p.profile-card__bold Số con:
+                    p 3 con
+                  .profile-card__line
+                    p.profile-card__bold SĐT:
+                    p 0987654321
+                  .profile-card__setting
+                    a(href="#!")
+                      span
+                        i.fa.fa-power-off
+                      | Log out
+                    a(href="#!")
+                      span
+                        i.fa.fa-cog
+                      | Chỉnh sửa
+              .profile-baby.card-bg.profile-baby--active(style="margin-top: 10px;")
+                .profile-baby__img
+                h1.profile-baby__name Nguyễn Huyền My
+                .profile-baby__icon
+                  i.fa.fa-chevron-right(style="margin-right: -5px;")
+                  i.fa.fa-chevron-right
+              .profile-baby.card-bg
+                .profile-baby__img
+                h1.profile-baby__name Nguyễn Văn Toàn
+                .profile-baby__icon
+                  i.fa.fa-chevron-right(style="margin-right: -5px;")
+                  i.fa.fa-chevron-right
+              .profile-baby.card-bg
+                .profile-baby__img
+                h1.profile-baby__name Nguyễn Thu Thủy
+                .profile-baby__icon
+                  i.fa.fa-chevron-right(style="margin-right: -5px;")
+                  i.fa.fa-chevron-right
+          .col-md-8
+            h1.profile-titlelist.mobile-hide(style="margin-top: 0;") Tổng quát
+            .profile-general.card-bg
+              .profile-list__user
+                .profile-list__avar.profile-card__img
+                  .profile-list__icon.profile-card__photo-icon
+                      i.fa.fa-camera
+                .profile-list__detail
+                  h1.profile-list__title Nguyễn Huyền My
+                  p.profile-list__text
+                    span.text-bold Tuổi
+                    |  : 30 tháng
+                    span.text-space |
+                    span.text-bold Giới tính :
+                    |  nữ
+                    span
+                    span.text-space.profile-list__detail-desk |
+                    span.text-bold.profile-list__detail-desk Lần test cuối
+                    |  : 1 tháng trước
+              .profile-list__detail-mobile
+                p.profile-list__text
+                  span.text-bold Lần test cuối
+                  |  : 1 tháng trước
+              .profile-list__wrap
+                .profile-list__block
+                  .profile-list__label
+                    svg.profile-list__svg
+                      circle.profile-list__bg-circle(cx="50" cy="50" r="45")
+                      circle.profile-list__circle-inside.profile-list__circle-inside--green#skill(cx="50" cy="50" r="45" transform="rotate(-90 50 50)")
+                    .profile-list__number.cl-green
+                      p.profile-list__percent 90%
+                      p Đạt
+                  .profile-list__label-text Kỹ năng
+                .profile-list__block
+                  .profile-list__label
+                    svg.profile-list__svg
+                      circle.profile-list__bg-circle(cx="50" cy="50" r="45")
+                      circle.profile-list__circle-inside.profile-list__circle-inside--green#iq(cx="50" cy="50" r="45" transform="rotate(-90 50 50)")
+                    .profile-list__number.cl-green
+                      p.profile-list__percent 120
+                      p Tốt
+                  .profile-list__label-text IQ
+                .profile-list__block
+                  .profile-list__label
+                    svg.profile-list__svg
+                      circle.profile-list__bg-circle.profile-list__circle-inside--orange(cx="50" cy="50" r="45")
+                      circle.profile-list__circle-inside#eq(cx="50" cy="50" r="45" transform="rotate(-90 50 50)")
+                    .profile-list__number.cl-orange
+                      p.profile-list__percent 70
+                      p TB
+                  .profile-list__label-text EQ
+
+
+            h1.profile-titlelist Biểu đồ phát triển chung
+            .profile-chart.card-bg
+              canvas#mychart(width="600", height="300")
+              .profile-chart__title Biểu đồ 6 tháng gần nhất
+              .profile-chart__tick
+                .profile-chart__wrap
+                  .profile-chart__legend.bg-yellow
+                  p.profile-chart__label Ngôn ngữ
+                .profile-chart__wrap
+                  .profile-chart__legend.bg-orange
+                  p.profile-chart__label Vận động
+                .profile-chart__wrap
+                  .profile-chart__legend.bg-blue
+                  p.profile-chart__label Giao tiếp
+                .profile-chart__wrap
+                  .profile-chart__legend.bg-green
+                  p.profile-chart__label Phát triển
+
+            h1.profile-titlelist Các chỉ số trong tháng gần nhất
+            .profile-bar.card-bg
+              .profile-bar__wrapper
+                p.profile-bar__title Ngôn ngữ
+                .profile-bar__blah
+                  .profile-bar__progress.progress
+                    .profile-bar__progress-bar.progress-bar.bg-blue(role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                  .profile-bar__practice-mobile
+                    a(href="#!") Luyện tập
+                      span
+                        i.fa.fa-chevron-right(style="margin-right: -5px;")
+                        i.fa.fa-chevron-right
+                p.profile-bar__rate 80 (rất tốt)
+                .profile-bar__practice
+                  a(href="#!") Luyện tập
+                    span
+                      i.fa.fa-chevron-right(style="margin-right: -5px;")
+                      i.fa.fa-chevron-right
+              .profile-bar__wrapper
+                p.profile-bar__title Vận động
+                .profile-bar__blah
+                  .profile-bar__progress.progress
+                    .profile-bar__progress-bar.progress-bar.bg-orange(role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                  .profile-bar__practice-mobile
+                    a(href="#!") Luyện tập
+                      span
+                        i.fa.fa-chevron-right(style="margin-right: -5px;")
+                        i.fa.fa-chevron-right
+                p.profile-bar__rate 60 (Trung bình)
+                .profile-bar__practice
+                  a(href="#!") Luyện tập
+                    span
+                      i.fa.fa-chevron-right(style="margin-right: -5px;")
+                      i.fa.fa-chevron-right
+              .profile-bar__wrapper
+                p.profile-bar__title Giao tiếp
+                .profile-bar__blah
+                  .profile-bar__progress.progress
+                    .profile-bar__progress-bar.progress-bar.bg-red(role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                  .profile-bar__practice-mobile
+                    a(href="#!") Luyện tập
+                      span
+                        i.fa.fa-chevron-right(style="margin-right: -5px;")
+                        i.fa.fa-chevron-right
+                p.profile-bar__rate 30 (chậm)
+                .profile-bar__practice
+                  a(href="#!") Luyện tập
+                    span
+                      i.fa.fa-chevron-right(style="margin-right: -5px;")
+                      i.fa.fa-chevron-right
+              .profile-bar__wrapper
+                p.profile-bar__title Kỹ năng
+                .profile-bar__blah
+                  .profile-bar__progress.progress
+                    .profile-bar__progress-bar.progress-bar.bg-green(role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                  .profile-bar__practice-mobile
+                    a(href="#!") Luyện tập
+                      span
+                        i.fa.fa-chevron-right(style="margin-right: -5px;")
+                        i.fa.fa-chevron-right
+                p.profile-bar__rate 100 (Xuất sắc)
+                .profile-bar__practice
+                  a(href="#!") Luyện tập
+                    span
+                      i.fa.fa-chevron-right(style="margin-right: -5px;")
+                      i.fa.fa-chevron-right
+              .profile-bar__wrapper
+                p.profile-bar__title Ngôn ngữ
+                .profile-bar__blah
+                  .profile-bar__progress.progress
+                    .profile-bar__progress-bar.progress-bar.bg-blue(role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                  .profile-bar__practice-mobile
+                    a(href="#!") Luyện tập
+                      span
+                        i.fa.fa-chevron-right(style="margin-right: -5px;")
+                        i.fa.fa-chevron-right
+                p.profile-bar__rate 60 (rất tốt)
+                .profile-bar__practice
+                  a(href="#!") Luyện tập
+                    span
+                      i.fa.fa-chevron-right(style="margin-right: -5px;")
+                      i.fa.fa-chevron-right
+              .profile-bar__wrapper
+                p.profile-bar__title Vận động
+                .profile-bar__blah
+                  .profile-bar__progress.progress
+                    .profile-bar__progress-bar.progress-bar.bg-orange(role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                  .profile-bar__practice-mobile
+                    a(href="#!") Luyện tập
+                      span
+                        i.fa.fa-chevron-right(style="margin-right: -5px;")
+                        i.fa.fa-chevron-right
+                p.profile-bar__rate 60 (Trung bình)
+                .profile-bar__practice
+                  a(href="#!") Luyện tập
+                    span
+                      i.fa.fa-chevron-right(style="margin-right: -5px;")
+                      i.fa.fa-chevron-right
+              .profile-bar__wrapper
+                p.profile-bar__title Giao tiếp
+                .profile-bar__blah
+                  .profile-bar__progress.progress
+                    .profile-bar__progress-bar.progress-bar.bg-red(role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                  .profile-bar__practice-mobile
+                    a(href="#!") Luyện tập
+                      span
+                        i.fa.fa-chevron-right(style="margin-right: -5px;")
+                        i.fa.fa-chevron-right
+                p.profile-bar__rate 30 (Chậm)
+                .profile-bar__practice
+                  a(href="#!") Luyện tập
+                    span
+                      i.fa.fa-chevron-right(style="margin-right: -5px;")
+                      i.fa.fa-chevron-right
+              .profile-bar__wrapper
+                p.profile-bar__title Kỹ năng
+                .profile-bar__blah
+                  .profile-bar__progress.progress
+                    .profile-bar__progress-bar.progress-bar.bg-green(role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                  .profile-bar__practice-mobile
+                    a(href="#!") Luyện tập
+                      span
+                        i.fa.fa-chevron-right(style="margin-right: -5px;")
+                        i.fa.fa-chevron-right
+                p.profile-bar__rate 100 (Xuất sắc)
+                .profile-bar__practice
+                  a(href="#!") Luyện tập
+                    span
+                      i.fa.fa-chevron-right(style="margin-right: -5px;")
+                      i.fa.fa-chevron-right
+              a.profile-bar__button(href="#!") Xem chi tiết chỉ số
+            h1.profile-titlelist Nhận xét về sự phát triển của bé
+            .profile-comment.card-bg
+              .profile-comment__wrapper
+                i.fa.fa-check
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+              .profile-comment__wrapper
+                i.fa.fa-check
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+              .profile-comment__wrapper
+                i.fa.fa-check
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+              .profile-comment__wrapper
+                i.fa.fa-check
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+            .profile-comment__button
+              a.profile-comment__btn.profile-comment__btn--purple(href="#!") Test lại
+                span(style="margin-left: 5px;")
+                  i.fa.fa-angle-right(style="margin-right: -4px;")
+                  i.fa.fa-angle-right
+              a.profile-comment__btn.profile-comment__btn--orange(href="#!") Các bài tập phù hợp
+                span(style="margin-left: 5px;")
+                  i.fa.fa-angle-right(style="margin-right: -4px;")
+                  i.fa.fa-angle-right
+            .profile-card-mobile.mobile-show
+              .profile-baby.card-bg
+                .profile-baby__img
+                h1.profile-baby__name Nguyễn Văn Toàn
+                .profile-baby__icon
+                  i.fa.fa-chevron-right(style="margin-right: -5px;")
+                  i.fa.fa-chevron-right
+              .profile-baby.card-bg
+                .profile-baby__img
+                h1.profile-baby__name Nguyễn Thu Thủy
+                .profile-baby__icon
+                  i.fa.fa-chevron-right(style="margin-right: -5px;")
+                  i.fa.fa-chevron-right
+      +footer
+    script(src="js/main.js")

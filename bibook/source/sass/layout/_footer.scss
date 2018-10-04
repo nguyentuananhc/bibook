@@ -1,0 +1,31 @@
+.footer {
+  padding: 80px 0;
+
+  @include respond-to ('phone-and-down') {
+    padding: 50px 0;
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 55px;
+    font-weight: 900;
+    color: $light-grey-2;
+    margin-left: 10px;
+  }
+
+  &__icon {
+    font-size: 30px;
+    margin: 0 5px 20px;
+    color: $grey-3;
+  }
+
+  &__p {
+    margin: 2px;
+  }
+}

@@ -1,0 +1,128 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+
+doctype html
+html
+  +head
+  body
+    +header
+    .bg-color
+      .container
+        h1.profile-title Trang cá nhân
+        .row
+          .col-md-4
+            .profile
+              .profile-card
+                .profile-card__header
+                  .profile-card__img
+                    .profile-card__photo-icon
+                      i.fa.fa-camera
+                  .profile-card__left
+                    h1.profile-card__name Nguyễn Thành Trung
+                    .profile-card__button
+                      a.profile-card__logout(href="#!")
+                        span
+                          i.fa.fa-power-off
+                        | Log out
+                      a.profile-card__cog(href="#!")
+                        span
+                          i.fa.fa-cog
+                .profile-card__body
+                  .profile-card__line
+                    p.profile-card__bold Tuổi
+                    p 30 tuổi
+                  .profile-card__line
+                    p.profile-card__bold Địa chỉ:
+                    p Hoàn Kiếm, Hà Nội
+                  .profile-card__line
+                    p.profile-card__bold Số con:
+                    p 3 con
+                  .profile-card__line
+                    p.profile-card__bold SĐT:
+                    p 0987654321
+                  .profile-card__setting
+                    a(href="#!")
+                      span
+                        i.fa.fa-power-off
+                      | Log out
+                    a(href="#!")
+                      span
+                        i.fa.fa-cog
+                      | Chỉnh sửa
+          .col-md-8
+            .profile-add
+              h4.profile-add__h4
+                span
+                  i.fa.fa-plus-circle
+                | Thêm em bé
+              .profile-add__abc
+                .profile-add__input-block
+                  .profile-add__title Họ tên
+                  .profile-add__input-wrapper
+                    input.profile-add__input.profile-add__input--name(type="text", placeholder="Tên của em bé")
+                    span.profile-add__input-icon
+                      i.fa.fa-user
+                .profile-add__input-line
+                  .profile-add__input-block.profile-add__input-block--date
+                    .profile-add__title Ngày tháng năm sinh
+                    .profile-add__input-wrapper
+                      input.profile-add__input.profile-add__input--date(type="text", placeholder="Chọn ngày tháng năm sinh")
+                      span.profile-add__input-icon2
+                        i.fa.fa-calendar
+                  .profile-add__input-block.profile-add__input-block--sex
+                    .profile-add__title Giới tính
+                    .profile-add__select-wrapper
+                      select.profile-add__select
+                        option(value="nam") Nam
+                        option(value="nữ") Nữ
+                      span.profile-add__select-icon
+                        i.fa.fa-chevron-down
+            h4.profile-subtitle Danh sách em bé
+            each item in [1,2,3]
+              .profile-list
+                .profile-list__user
+                  .profile-list__avar.profile-card__img
+                    .profile-list__icon.profile-card__photo-icon
+                      i.fa.fa-camera
+                  .profile-list__detail
+                    h1.profile-list__title Nguyễn Huyền My
+                    p.profile-list__text
+                      span.text-bold Tuổi
+                      |  : 30 tháng
+                      span.text-space |
+                      span.text-bold Giới tính :
+                      |  nữ
+                    .profile-list__detail-desk
+                      p.profile-list__text
+                        span.text-bold Lần test cuối
+                        |  : 1 tháng trước
+                      p.profile-list__text
+                        span.text-bold Kỹ năng phát triển
+                        |  : Đạt
+                        span.text-space |
+                        span.text-bold IQ :
+                        |  100
+                        span.text-space |
+                        span.text-bold EQ :
+                        |  80
+                .profile-list__detail-mobile
+                  p.profile-list__text
+                    span.text-bold Lần test cuối
+                    |  : 1 tháng trước
+                  p.profile-list__text
+                    span.text-bold Kỹ năng phát triển
+                    |  : Đạt
+                    span.text-space |
+                    span.text-bold IQ :
+                    |  100
+                    span.text-space |
+                    span.text-bold EQ :
+                    |  80
+                .profile-list__btn
+                  a(href="#!").profile-list__button Xem chi tiết
+                    span(style="margin-left: 5px;")
+                      i.fa.fa-angle-right(style="margin-right: -4px;")
+                      i.fa.fa-angle-right
+      +footer
+    script(src="js/main.js")

@@ -1,9 +1,24 @@
+body * {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: $grey;
+}
+
+img {
+  max-width: 100%;
+}
+
 ul,
 ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 input,
 button {
   &,
@@ -11,11 +26,61 @@ button {
     outline: 0;
   }
 }
+
+input {
+  width: 100%;
+}
+
 a {
   &,
   &:hover,
   &:active {
     text-decoration: none;
     color: inherit;
+  }
+}
+
+.breadcrumb-custom {
+
+  @include respond-to ('phone-and-down') {
+    background-color: $white;
+    padding: 0 15px;
+    margin-bottom: 15px;
+  }
+
+  &__wrap {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+
+    @include respond-to ('phone-and-down') {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 30px;
+    margin-left: 12px;
+
+    @include respond-to ('phone-and-down') {
+      font-size: 20px;
+    }
+  }
+}
+
+.mobile-show {
+  display: none;
+
+  @include respond-to ('phone-and-down') {
+    display: block;
+  }
+}
+
+.mobile-hide {
+  @include respond-to ('phone-and-down') {
+    display: none;
   }
 }

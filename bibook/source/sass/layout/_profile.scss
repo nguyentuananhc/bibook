@@ -1,0 +1,437 @@
+.profile-title {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px 0;
+  margin: 0;
+
+  @include respond-to ('phone-and-down') {
+    display: none;
+  }
+}
+
+.profile-subtitle {
+  margin: 10px 0;
+}
+
+.profile-card {
+  @include respond-to ('phone-and-down') {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  &__header {
+    width: 100%;
+    height: 270px;
+    background: url('../images/profile-background.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+
+    @include respond-to ('phone-and-down') {
+      height: 185px;
+      flex-direction: row;
+      padding: 0 20px;
+    }
+  }
+
+  &__img {
+    height: 163px;
+    width: 163px;
+    border: 1px solid $white;
+    border-radius: 50%;
+    background: url('../images/profile-avar.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @include respond-to ('phone-and-down') {
+      height: 105px;
+      width: 105px;
+    }
+  }
+
+  &__photo-icon {
+    width: 30px;
+    height: 30px;
+    background-color: $grey-2;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -8px;
+    right: 20px;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+    @include respond-to ('phone-and-down') {
+      right: 5px;
+    }
+  }
+
+  &__name {
+    font-size: 17px;
+    font-weight: 700;
+    color: $white;
+    margin-top: 20px;
+  }
+
+  &__body {
+    height: 260px;
+    background-color: $white;
+    padding: 20px 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 15px;
+
+    @include respond-to ('phone-and-down') {
+      height: auto;
+    }
+  }
+
+  &__line {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include respond-to ('phone-and-down') {
+      padding: 0 20px;
+    }
+
+    p {
+      margin: 4px;
+    }
+  }
+
+  &__bold {
+    font-weight: 700;
+  }
+
+  &__setting {
+    padding: 0 30px;
+    margin-top: 30px;
+
+    @include respond-to ('phone-and-down') {
+      display: none;
+    }
+
+    a {
+      display: block;
+      padding: 5px 0;
+      color: $purple;
+
+      &:hover {
+        color: darken($purple, 10%);
+        transition: .4s;
+      }
+    }
+  }
+
+  &__left {
+    @include respond-to ('phone-and-down') {
+      margin-left: 20px;
+    }
+  }
+
+  &__button {
+    display: none;
+    color: $purple;
+    margin-top: 20px;
+
+    @include respond-to ('phone-and-down') {
+      display: block;
+    }
+  }
+
+  &__logout {
+    background-color: $white;
+    padding: 10px 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+  &__cog {
+    background-color: $white;
+    padding: 10px 13px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+}
+
+.profile-add {
+  background-color: $white;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: relative;
+  padding: 15px 25px;
+
+  @include respond-to ('phone-and-down') {
+    padding: 15px 20px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid $white;
+    border-left: 25px solid transparent;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: purple;
+    border-top-left-radius: 4px;
+  }
+
+  &__h4 {
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    z-index: 4;
+  }
+
+  &__abc {
+    display: flex;
+    flex-direction: row;
+
+    @include respond-to ('tablet-and-down') {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__input-wrapper {
+    width: 285px;
+    margin-right: 10px;
+    position: relative;
+
+    @media (max-width: 1200px) {
+      width: 220px;
+    }
+
+    @include respond-to ('tablet-and-down') {
+      width: 100%;
+    }
+  }
+
+  &__input-block {
+    &--date {
+      @include respond-to ('tablet-and-down') {
+        width: 70%;
+        margin-top: 10px;
+      }
+    }
+
+    &--sex {
+      @include respond-to ('tablet-and-down') {
+        width: 25%;
+        margin-left: auto;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__input-line {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__input,
+  &__select {
+    border: 1px solid $grey-2;
+    border-radius: 4px;
+    height: 40px;
+
+    &--name {
+      padding-left: 40px;
+    }
+
+    &--date {
+      padding-left: 10px;
+    }
+  }
+
+  &__input {
+    &::placeholder {
+      color: $grey-2;
+    }
+  }
+
+  &__select {
+    width: 92px;
+    background-color: transparent;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-left: 10px;
+
+    @include respond-to ('tablet-and-down') {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__input-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: $grey-3;
+  }
+
+  &__input-icon2 {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: $grey-3;
+  }
+
+  &__select-wrapper {
+    position: relative;
+  }
+
+  &__select-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-space {
+  margin: 0 10px;
+}
+
+.profile-list {
+  background-color: $white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 15px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  @include respond-to ('tablet-and-down') {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    @include respond-to ('tablet-and-down') {
+      border-bottom: 1px solid $grey;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__avar {
+    width: 118px;
+    height: 118px;
+
+    @include respond-to ('phone-and-down') {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__icon {
+    bottom: -3px;
+    right: 10px;
+
+    @include respond-to ('phone-and-down') {
+      bottom: -8px;
+      right: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 10px;
+
+    @include respond-to ('tablet-and-down') {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    color: $grey-3;
+  }
+
+  &__detail {
+    margin-left: 30px;
+  }
+
+  &__detail-desk {
+
+    @include respond-to ('tablet-and-down') {
+      display: none;
+    }
+  }
+
+  &__detail-mobile {
+    display: none;
+    padding: 15px 0;
+
+    @include respond-to ('tablet-and-down') {
+      display: block;
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 147px;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    background-color: $purple;
+    color: $white;
+    transition: .4s;
+    float: right;
+
+    &:hover {
+      color: $white;
+      opacity: .8;
+      transition: .4s;
+    }
+  }
+
+  &__btn {
+    flex: 1;
+  }
+}
