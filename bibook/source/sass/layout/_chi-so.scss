@@ -1,0 +1,117 @@
+.profile-index {
+  width: 70px;
+  height: 70px;
+}
+
+.profile-index-wrap {
+  margin-bottom: 15px;
+}
+
+.profile-index-user {
+  padding: 30px 20px 0;
+
+  @include respond-to ('tablet-and-down') {
+    padding: 20px 15px;
+  }
+
+  &__switch {
+    background-color: $purple;
+    color: $white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-left: auto;
+    padding: 5px 10px;
+  }
+
+  &__text {
+    font-size: 12px;
+
+    span {
+      font-size: 12px;
+    }
+
+    .text-space {
+      margin: 0 3px;
+    }
+  }
+
+  &__detail {
+    margin-left: 15px;
+  }
+}
+
+.profile-chart-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__label {
+    margin: 0 5px;
+  }
+}
+
+.profile-index-cardbody {
+  height: auto;
+}
+
+.profile-index-result {
+  margin: 20px 4px;
+}
+
+.profile-index-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  &__img {
+    object-fit: contain;
+    padding: 25px 40px 0 25px;
+
+    @include respond-to ('phone-and-down') {
+      display: none;
+      padding: 0;
+      width: 15%;
+    }
+  }
+
+  &__blah {
+    width: 60%;
+
+    @include respond-to ('phone-and-down') {
+      width: 69%;
+    }
+  }
+
+  &__link{
+    text-decoration: underline;
+    color: $blue;
+  }
+
+  &__title {
+    width: 100%;
+
+    @include respond-to ('phone-and-down') {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+  }
+
+  &__header {
+    width: 15%;
+
+    @include respond-to ('phone-and-down') {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.profile-index-bar {
+  margin-bottom: 10px;
+}

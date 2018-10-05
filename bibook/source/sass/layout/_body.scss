@@ -71,6 +71,14 @@ a {
   }
 }
 
+.pd-0 {
+  padding: 0;
+}
+
+.mg-0 {
+  margin: 0;
+}
+
 .mobile-show {
   display: none;
 
@@ -81,6 +89,20 @@ a {
 
 .mobile-hide {
   @include respond-to ('phone-and-down') {
+    display: none;
+  }
+}
+
+.tablet-show {
+  display: none;
+
+  @include respond-to ('tablet-and-down') {
+    display: block;
+  }
+}
+
+.tablet-hide {
+  @include respond-to ('tablet-and-down') {
     display: none;
   }
 }

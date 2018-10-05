@@ -1,0 +1,211 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+
+doctype html
+html
+  +head
+  body
+    +header
+    a(href="#!")
+      .breadcrumb-custom
+        .breadcrumb-custom__wrap.container
+          i.fa.fa-chevron-left
+          p Chi tiết các chỉ số của bé
+    .container
+      .row
+        .col-lg-4
+          .profile.profile-index-wrap
+            .profile-card.profile-add(style="padding: 0;")
+              .profile-list__user.profile-index-user
+                .profile-list__avar.profile-card__img.profile-index
+                .profile-list__detail.profile-index-user__detail
+                  h1.profile-list__title.mg-0 Nguyễn Huyền My
+                  .profile-list__detail-mobile.pd-0
+                    p.profile-list__text.profile-index-user__text
+                      span.text-bold Tuổi
+                      |  : 30 tháng
+                      span.text-space |
+                      span.text-bold Giới tính :
+                      |  nữ
+                a.profile-index-user__switch.mobile-show(href="#!") Đổi bé
+              .profile-card__body.profile-index-cardbody
+                .profile-card__line.mobile-hide.tablet-hide
+                  p.profile-card__bold Tuổi
+                  p 30 tuổi
+                .profile-card__line.mobile-hide.tablet-hide
+                  p.profile-card__bold Giới tính:
+                  p Nữ
+                .profile-card__line.mobile-hide.tablet-hide
+                  p.profile-card__bold Test lần cuối:
+                  p 1 tháng trước
+                .profile-card__line.tablet-show
+                  p.profile-list__text
+                    span.text-bold Lần test cuối
+                    |  : 1 tháng trước
+                p.profile-card__line.profile-index-result.tablet-hide Kết quả gần nhất
+                .profile-list__wrap.profile-chart-index
+                  .profile-list__block
+                    .profile-list__label.profile-chart-index__label
+                      svg.profile-list__svg
+                        circle.profile-list__bg-circle(cx="50" cy="50" r="45")
+                        circle.profile-list__circle-inside.profile-list__circle-inside--green#skill(cx="50" cy="50" r="45" transform="rotate(-90 50 50)")
+                      .profile-list__number.cl-green
+                        p.profile-list__percent 90%
+                        p Đạt
+                    .profile-list__label-text Kỹ năng
+                  .profile-list__block
+                    .profile-list__label.profile-chart-index__label
+                      svg.profile-list__svg
+                        circle.profile-list__bg-circle(cx="50" cy="50" r="45")
+                        circle.profile-list__circle-inside.profile-list__circle-inside--green#iq(cx="50" cy="50" r="45" transform="rotate(-90 50 50)")
+                      .profile-list__number.cl-green
+                        p.profile-list__percent 120
+                        p Tốt
+                    .profile-list__label-text IQ
+                  .profile-list__block
+                    .profile-list__label.profile-chart-index__label
+                      svg.profile-list__svg
+                        circle.profile-list__bg-circle.profile-list__circle-inside--orange(cx="50" cy="50" r="45")
+                        circle.profile-list__circle-inside#eq(cx="50" cy="50" r="45" transform="rotate(-90 50 50)")
+                      .profile-list__number.cl-orange
+                        p.profile-list__percent 70
+                        p TB
+                    .profile-list__label-text EQ
+            .profile-baby.card-bg.mobile-hide
+              .profile-baby__img
+              h1.profile-baby__name Nguyễn Văn Toàn
+              .profile-baby__icon
+                i.fa.fa-chevron-right(style="margin-right: -5px;")
+                i.fa.fa-chevron-right
+            .profile-baby.card-bg.mobile-hide
+              .profile-baby__img
+              h1.profile-baby__name Nguyễn Thu Thủy
+              .profile-baby__icon
+                i.fa.fa-chevron-right(style="margin-right: -5px;")
+                i.fa.fa-chevron-right
+        .col-lg-8
+          .profile-bar.profile-index-bar.card-bg
+            .profile-index-block
+              img.profile-index-block__img(src="images/chi-so2.png", alt="")
+              .profile-index-block__left
+                .profile-bar__wrapper
+                  .profile-index-block__header
+                    .profile-index-block__img.mobile-show
+                      img.profile-index-block__img-mobile(src="images/chi-so2.png", alt="")
+                    p.profile-bar__title.profile-index-block__title.text-bold Ngôn ngữ
+                  .profile-bar__blah.profile-index-block__blah
+                    .profile-bar__progress.progress
+                      .profile-bar__progress-bar.progress-bar.bg-blue(role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                  p.profile-bar__rate.text-bold 80 (rất tốt)
+                p.profile-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+                p.profile-text Dể tốt hơn hãy luyện tập thêm ngôn ngữ cho bé theo các bài tập “
+                  span
+                    a.profile-index-block__link(href="") Luyện tập đọc
+                  | ”, “
+                  span
+                    a.profile-index-block__link(href="") Luyện tập giao tiếp
+                  | ”
+
+          .profile-bar.profile-index-bar.card-bg
+            .profile-index-block
+              img.profile-index-block__img(src="images/chi-so1.png", alt="")
+              .profile-index-block__left
+                .profile-bar__wrapper
+                  .profile-index-block__header
+                    .profile-index-block__img.mobile-show
+                      img.profile-index-block__img-mobile(src="images/chi-so1.png", alt="")
+                    p.profile-bar__title.profile-index-block__title.text-bold Ngôn ngữ
+                  .profile-bar__blah.profile-index-block__blah
+                    .profile-bar__progress.progress
+                      .profile-bar__progress-bar.progress-bar.bg-blue(role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                  p.profile-bar__rate.text-bold 80 (rất tốt)
+                p.profile-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+                p.profile-text Dể tốt hơn hãy luyện tập thêm ngôn ngữ cho bé theo các bài tập “
+                  span
+                    a.profile-index-block__link(href="") Luyện tập đọc
+                  | ”, “
+                  span
+                    a.profile-index-block__link(href="") Luyện tập giao tiếp
+                  | ”
+          .profile-bar.profile-index-bar.card-bg
+            .profile-index-block
+              img.profile-index-block__img(src="images/chi-so2.png", alt="")
+              .profile-index-block__left
+                .profile-bar__wrapper
+                  .profile-index-block__header
+                    .profile-index-block__img.mobile-show
+                      img.profile-index-block__img-mobile(src="images/chi-so2.png", alt="")
+                    p.profile-bar__title.profile-index-block__title.text-bold Ngôn ngữ
+                  .profile-bar__blah.profile-index-block__blah
+                    .profile-bar__progress.progress
+                      .profile-bar__progress-bar.progress-bar.bg-blue(role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                  p.profile-bar__rate.text-bold 80 (rất tốt)
+                p.profile-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+                p.profile-text Dể tốt hơn hãy luyện tập thêm ngôn ngữ cho bé theo các bài tập “
+                  span
+                    a.profile-index-block__link(href="") Luyện tập đọc
+                  | ”, “
+                  span
+                    a.profile-index-block__link(href="") Luyện tập giao tiếp
+                  | ”
+          .profile-bar.profile-index-bar.card-bg
+            .profile-index-block
+              img.profile-index-block__img(src="images/chi-so1.png", alt="")
+              .profile-index-block__left
+                .profile-bar__wrapper
+                  .profile-index-block__header
+                    .profile-index-block__img.mobile-show
+                      img.profile-index-block__img-mobile(src="images/chi-so1.png", alt="")
+                    p.profile-bar__title.profile-index-block__title.text-bold Ngôn ngữ
+                  .profile-bar__blah.profile-index-block__blah
+                    .profile-bar__progress.progress
+                      .profile-bar__progress-bar.progress-bar.bg-blue(role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                  p.profile-bar__rate.text-bold 80 (rất tốt)
+                p.profile-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+                p.profile-text Dể tốt hơn hãy luyện tập thêm ngôn ngữ cho bé theo các bài tập “
+                  span
+                    a.profile-index-block__link(href="") Luyện tập đọc
+                  | ”, “
+                  span
+                    a.profile-index-block__link(href="") Luyện tập giao tiếp
+                  | ”
+          .profile-bar.profile-index-bar.card-bg
+            .profile-index-block
+              img.profile-index-block__img(src="images/chi-so1.png", alt="")
+              .profile-index-block__left
+                .profile-bar__wrapper
+                  .profile-index-block__header
+                    .profile-index-block__img.mobile-show
+                      img.profile-index-block__img-mobile(src="images/chi-so1.png", alt="")
+                    p.profile-bar__title.profile-index-block__title.text-bold Ngôn ngữ
+                  .profile-bar__blah.profile-index-block__blah
+                    .profile-bar__progress.progress
+                      .profile-bar__progress-bar.progress-bar.bg-blue(role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                  p.profile-bar__rate.text-bold 80 (rất tốt)
+                p.profile-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+                p.profile-text Dể tốt hơn hãy luyện tập thêm ngôn ngữ cho bé theo các bài tập “
+                  span
+                    a.profile-index-block__link(href="") Luyện tập đọc
+                  | ”, “
+                  span
+                    a.profile-index-block__link(href="") Luyện tập giao tiếp
+                  | ”
+
+
+          .profile-comment__button
+            a.profile-comment__btn.profile-comment__btn--purple(href="#!") Test lại
+              span(style="margin-left: 5px;")
+                i.fa.fa-angle-right(style="margin-right: -4px;")
+                i.fa.fa-angle-right
+            a.profile-comment__btn.profile-comment__btn--orange(href="#!") Các bài tập phù hợp
+              span(style="margin-left: 5px;")
+                i.fa.fa-angle-right(style="margin-right: -4px;")
+                i.fa.fa-angle-right
+    +footer
+  script(src="js/main.js")

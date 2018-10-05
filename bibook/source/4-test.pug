@@ -1,0 +1,145 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+
+doctype html
+html
+  +head
+  body
+    +header
+    a(href="#!")
+      .breadcrumb-custom
+        .breadcrumb-custom__wrap.container
+          i.fa.fa-chevron-left
+          p Chi tiết các chỉ số của bé
+    .container
+      .row
+        .col-lg-4
+          .profile.profile-index-wrap
+            .profile-card.profile-add(style="padding: 0;")
+              .profile-list__user.profile-index-user
+                .profile-list__avar.profile-card__img.profile-index
+                .profile-list__detail.profile-index-user__detail
+                  h1.profile-list__title.mg-0 Nguyễn Huyền My
+                  .profile-list__detail-mobile.pd-0
+                    p.profile-list__text.profile-index-user__text
+                      span.text-bold Tuổi
+                      |  : 30 tháng
+                      span.text-space |
+                      span.text-bold Giới tính :
+                      |  nữ
+                a.profile-index-user__switch.mobile-show(href="#!") Đổi bé
+              .profile-card__body.profile-index-cardbody
+                .profile-card__line.mobile-hide.tablet-hide
+                  p.profile-card__bold Tuổi
+                  p 30 tuổi
+                .profile-card__line.mobile-hide.tablet-hide
+                  p.profile-card__bold Giới tính:
+                  p Nữ
+                .profile-card__line.mobile-hide.tablet-hide
+                  p.profile-card__bold Test lần cuối:
+                  p 1 tháng trước
+                .profile-card__line.tablet-show
+                  p.profile-list__text
+                    span.text-bold Lần test cuối
+                    |  : 1 tháng trước
+                p.profile-card__line.profile-index-result.tablet-hide Kết quả gần nhất
+                .profile-list__wrap.profile-chart-index
+                  .profile-list__block
+                    .profile-list__label.profile-chart-index__label
+                      svg.profile-list__svg
+                        circle.profile-list__bg-circle(cx="50" cy="50" r="45")
+                        circle.profile-list__circle-inside.profile-list__circle-inside--green#skill(cx="50" cy="50" r="45" transform="rotate(-90 50 50)")
+                      .profile-list__number.cl-green
+                        p.profile-list__percent 90%
+                        p Đạt
+                    .profile-list__label-text Kỹ năng
+                  .profile-list__block
+                    .profile-list__label.profile-chart-index__label
+                      svg.profile-list__svg
+                        circle.profile-list__bg-circle(cx="50" cy="50" r="45")
+                        circle.profile-list__circle-inside.profile-list__circle-inside--green#iq(cx="50" cy="50" r="45" transform="rotate(-90 50 50)")
+                      .profile-list__number.cl-green
+                        p.profile-list__percent 120
+                        p Tốt
+                    .profile-list__label-text IQ
+                  .profile-list__block
+                    .profile-list__label.profile-chart-index__label
+                      svg.profile-list__svg
+                        circle.profile-list__bg-circle.profile-list__circle-inside--orange(cx="50" cy="50" r="45")
+                        circle.profile-list__circle-inside#eq(cx="50" cy="50" r="45" transform="rotate(-90 50 50)")
+                      .profile-list__number.cl-orange
+                        p.profile-list__percent 70
+                        p TB
+                    .profile-list__label-text EQ
+            .profile-baby.card-bg.mobile-hide
+              .profile-baby__img
+              h1.profile-baby__name Nguyễn Văn Toàn
+              .profile-baby__icon
+                i.fa.fa-chevron-right(style="margin-right: -5px;")
+                i.fa.fa-chevron-right
+            .profile-baby.card-bg.mobile-hide
+              .profile-baby__img
+              h1.profile-baby__name Nguyễn Thu Thủy
+              .profile-baby__icon
+                i.fa.fa-chevron-right(style="margin-right: -5px;")
+                i.fa.fa-chevron-right
+        .col-lg-8
+          nav
+            .nav.nav-tabs.test-nav#nav-tab(role="tablist")
+              a.nav-item.nav-link.test-nav__link.active#nav-1-tab(data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true") NGOẠI NGỮ
+
+              a.nav-item.nav-link.test-nav__link#nav-2-tab(data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="true") VẬN ĐỘNG TINH
+
+              a.nav-item.nav-link.test-nav__link#nav-3-tab(data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3" aria-selected="false") VẬN ĐỘNG THÔ
+
+              a.nav-item.nav-link.test-nav__link#nav-4-tab(data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false") GIAO TIẾP &amp; TCXH
+
+            .tab-content#nav-tabContent
+              <!-- NGOẠI NGỮ -->
+              .tab-pane.fade.show.active#nav-1(role="tabpanel", aria-labelledby="nav-1-tab")
+                .profile-bar.card-bg
+                  p.test-question Câu 1/10
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+
+                  .test-button
+                    button.test-button__btn Không
+                    button.test-button__btn Thỉnh thoảng
+                    button.test-button__btn Thường xuyên
+                    button.test-button__btn Luôn luôn
+
+                  p.test-question Câu 2/10
+
+                  .test-answer
+                    .test-answer__wrap
+                      input(type="radio", id="male", name="gender").radio-input
+                      label(for="male") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+                    input(type="radio", id="female", name="gender").radio-input
+                    label(for="female") 女性
+
+              <!-- VẬN ĐỘNG TINH -->
+              .tab-pane.fade#nav-2(role="tabpanel", aria-labelledby="nav-2-tab")
+                .profile-bar.card-bg
+                  p b
+
+              <!-- VẬN ĐỘNG THÔ -->
+              .tab-pane.fade#nav-3(role="tabpanel", aria-labelledby="nav-3-tab")
+                .profile-bar.card-bg
+                  p c
+
+              <!-- GIAO TIẾP -->
+              .tab-pane.fade#nav-4(role="tabpanel", aria-labelledby="nav-4-tab")
+                .profile-bar.card-bg
+                  p d
+
+          .profile-comment__button
+            a.profile-comment__btn.profile-comment__btn--green(href="#!") Test lại
+              span(style="margin-left: 5px;")
+                i.fa.fa-angle-right(style="margin-right: -4px;")
+                i.fa.fa-angle-right
+            a.profile-comment__btn.profile-comment__btn--purple(href="#!") Tiếp tục test nội dung khác
+              span(style="margin-left: 5px;")
+                i.fa.fa-angle-right(style="margin-right: -4px;")
+                i.fa.fa-angle-right
+    +footer
+  script(src="js/main.js")
