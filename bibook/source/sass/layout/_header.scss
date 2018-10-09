@@ -8,6 +8,7 @@ header {
   @include respond-to ('tablet-and-down') {
     height: 85px;
     flex-direction: column;
+    display: block;
   }
 }
 
@@ -15,6 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
+  position: relative;
 }
 
 .header-left,
@@ -58,17 +60,82 @@ header {
   }
 
   &__item {
-
+    &:hover {
+      .header-subnav {
+        display: block;
+      }
+    }
   }
 
   &__link {
     font-weight: 700;
     color: $white;
-    padding: 0 20px;
+    padding: 40px 20px;
 
     &:hover {
       color: $white;
     }
+  }
+}
+
+.header-subnav {
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  left: 0;
+  top: 90px;
+  z-index: 1000;
+  display: none;
+  -webkit-box-shadow: 0px 2px 30px 0px rgba(50, 50, 50, 0.25);
+  -moz-box-shadow:    0px 2px 30px 0px rgba(50, 50, 50, 0.25);
+  box-shadow:         0px 2px 30px 0px rgba(50, 50, 50, 0.25);
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__block {
+    padding: 30px;
+  }
+
+  &__item {
+    background-color: $white;
+
+    &--border-left {
+      border-right: 1px solid $grey-2;
+    }
+
+    &--border-bottom {
+      border-bottom: 1px solid $grey-2;
+    }
+
+    &:hover {
+      background-color: $grey-5;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+      margin-left: 10px;
+      font-size: 25px;
+      font-weight: 700;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    color: $grey-4;
   }
 }
 
@@ -140,6 +207,21 @@ header {
     justify-content: center;
     line-height: 0;
   }
+
+  &__btn {
+    background-color: $purple-2;
+    color: $white;
+    border: 0;
+    border-radius: 4px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: .4s;
+
+    &:hover {
+      opacity: .8;
+      transition: .4s;
+    }
+  }
 }
 
 .header-profile-mobile {
@@ -194,9 +276,14 @@ header {
   max-height: 0;
   overflow: hidden;
   transition: .4s;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 30px 0px rgba(50, 50, 50, 0.25);
+  -moz-box-shadow:    0px 2px 30px 0px rgba(50, 50, 50, 0.25);
+  box-shadow:         0px 2px 30px 0px rgba(50, 50, 50, 0.25);
 
   @include respond-to ('tablet-and-down') {
     display: block;
+    position: relative;
   }
 
   p, h2 {
@@ -210,8 +297,7 @@ header {
 
   &.slide-down {
     &.header-mobile {
-      max-height: 9999px;
-      overflow: visible;
+      max-height: 100vh;
     }
   }
 
@@ -235,13 +321,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 0;
   }
 
   &__nav {
     background-color: $white;
-    -webkit-box-shadow: 0px 2px 30px 0px rgba(50, 50, 50, 0.25);
-    -moz-box-shadow:    0px 2px 30px 0px rgba(50, 50, 50, 0.25);
-    box-shadow:         0px 2px 30px 0px rgba(50, 50, 50, 0.25);
   }
 
   &__item {

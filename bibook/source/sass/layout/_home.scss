@@ -1,0 +1,349 @@
+.home-modal {
+  &__btn {
+    width: 100%;
+  }
+
+  &__input {
+    margin: 0;
+    width: 100%;
+  }
+
+  &__btn {
+    background-color: $purple;
+    border-radius: 4px;
+  }
+}
+
+.home-comment {
+  padding: 0;
+  color: $white;
+
+  @include respond-to ('tablet-and-down') {
+    color: black;
+  }
+
+  &--title-w {
+    color: $white;
+  }
+}
+
+.home-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: $white;
+
+  @include respond-to ('phone-and-down') {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+  }
+}
+
+.home-banner {
+  min-height: 482px;
+  background: url('../images/home-banner.png') no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  @include respond-to ('tablet-and-down') {
+    align-items: flex-start;
+    background: lighten($purple, 10%);
+  }
+
+  @include respond-to ('phone-and-down') {
+    min-height: 500px;
+  }
+
+  &__title {
+    font-size: 38px;
+    font-weight: 900;
+    color: $white;
+
+    @include respond-to ('phone-and-down') {
+      text-align: center;
+      font-size: 25px;
+    }
+  }
+
+  &__wrapper {
+    font-size: 14px;
+    width: 45%;
+
+    @include respond-to ('tablet-and-down') {
+      width: 100%;
+      margin-top: 55px;
+    }
+  }
+
+  &__img {
+    @include respond-to ('tablet-and-down') {
+      max-width: 50%;
+    }
+
+    @include respond-to ('phone-and-down') {
+      max-width: 100%;
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &__pic {
+    position: absolute;
+    right: 0;
+    top: 15px;
+
+    @include respond-to ('tablet-and-down') {
+      width: 100%;
+      text-align: center;
+      top: 290px;
+    }
+
+    @include respond-to ('phone-and-down') {
+      top: 345px;
+    }
+  }
+}
+
+.home-step {
+  margin: 175px 0 60px 0;
+
+  @include respond-to ('tablet-and-down') {
+    margin: 60px 0;
+  }
+
+  @include respond-to ('tablet-and-down') {
+    margin: 85px 0 10px;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+
+    @include respond-to ('phone-and-down') {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    img {
+      object-fit: contain;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    @include respond-to ('phone-and-down') {
+      width: 50%;
+    }
+
+    &--break {
+      @include respond-to ('phone-and-down') {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__img {
+    @include respond-to ('phone-and-down') {
+      width: 50%;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    right: -82px;
+
+    @include respond-to ('tablet-and-down') {
+      top: 31%;
+      transform: translateY(-50%);
+      right: -37px;
+      width: 30%;
+    }
+
+    @include respond-to ('phone-and-down') {
+      top: 25%;
+      right: -30px;
+    }
+
+    &--rotate {
+      @include respond-to ('phone-and-down') {
+        top: 110%;
+        transform: rotate(135deg);
+        right: 90px;
+      }
+    }
+  }
+
+  &__block {
+    text-align: center;
+    padding: 0 60px;
+
+    @include respond-to ('tablet-and-down') {
+      padding: 0 40px;
+    }
+
+    @include respond-to ('phone-and-down') {
+      padding: 0 20px;
+    }
+  }
+}
+
+.home-harm {
+  min-height: 1470px;
+  background: url('../images/home-banner-2.png') no-repeat;
+  background-size: cover;
+
+  @include respond-to ('tablet-and-down') {
+    background: $white;
+  }
+
+  &__div {
+    min-height: 490px;
+    display: flex;
+    align-items: center;
+
+    &--green {
+      background-color: rgba(95, 213, 173, 0.45);
+
+      @include respond-to ('tablet-and-down') {
+        background-color: $white;
+      }
+    }
+    &--purple {
+      background-color: rgba(170, 83, 153, 0.45);
+
+      @include respond-to ('tablet-and-down') {
+        background-color: $grey;
+      }
+    }
+    &--orange {
+      background-color: rgba(251, 165, 134, 0.45);
+
+      @include respond-to ('tablet-and-down') {
+        background-color: $white;
+      }
+    }
+  }
+
+  &__wrap {
+    width: 365px;
+    height: 365px;
+    border: 3px solid $white;
+    border-radius: 50%;
+    backgroud-color: red;
+    background: url('../images/profile-avar.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    margin-right: 40px;
+
+    @include respond-to ('phone-and-down') {
+      margin: 0;
+    }
+  }
+}
+
+.home-service {
+  margin-top: 40px;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 900;
+    color: $purple;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @include respond-to ('phone-and-down') {
+      font-size: 25px;
+      margin: 0;
+    }
+  }
+
+  &__comment {
+    padding: 0;
+  }
+
+  &__button {
+    float: none;
+  }
+
+  &__button-mobile {
+    width: 100%;
+    border-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+
+    @include respond-to ('tablet-and-down') {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    background-color: $white;
+
+    @include respond-to ('tablet-and-down') {
+      margin-top: 20px;
+    }
+
+    &--border-left {
+      border-right: 1px solid $grey;
+
+      @include respond-to ('tablet-and-down') {
+        border-right: 0;
+      }
+    }
+
+    &--border-bottom {
+      border-bottom: 1px solid $grey;
+    }
+  }
+
+  &__skill {
+    display: flex;
+
+    h1 {
+      font-weight: 700;
+      margin: 0;
+      margin-left: 10px;
+    }
+  }
+
+  &__skill-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    background-color: $white;
+    border-top: 1px solid $grey-5;
+
+    &--full {
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+    &--borderleft {
+      border-right: 1px solid $grey-5;
+    }
+  }
+}

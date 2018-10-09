@@ -87,49 +87,83 @@ html
         .col-lg-8
           nav
             .nav.nav-tabs.test-nav#nav-tab(role="tablist")
-              a.nav-item.nav-link.test-nav__link.active#nav-1-tab(data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true") NGOẠI NGỮ
+              a.nav-item.nav-link.test-nav__link.mobile-hide.active#nav-1-tab(data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true") NGOẠI NGỮ
 
-              a.nav-item.nav-link.test-nav__link#nav-2-tab(data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="true") VẬN ĐỘNG TINH
+              a.nav-item.nav-link.test-nav__link.mobile-hide#nav-2-tab(data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="true") VẬN ĐỘNG TINH
 
-              a.nav-item.nav-link.test-nav__link#nav-3-tab(data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3" aria-selected="false") VẬN ĐỘNG THÔ
+              a.nav-item.nav-link.test-nav__link.mobile-hide#nav-3-tab(data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3" aria-selected="false") VẬN ĐỘNG THÔ
 
-              a.nav-item.nav-link.test-nav__link#nav-4-tab(data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false") GIAO TIẾP &amp; TCXH
+              a.nav-item.nav-link.test-nav__link.mobile-hide#nav-4-tab(data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false") GIAO TIẾP &amp; TCXH
+
+              .dropdown.mobile-show
+                button.btn.btn-secondary.dropdown-toggle#dropdownMenuOffset(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") la
+                .dropdown-menu(aria-labelledby="dropdownMenuOffset")
+                  a.dropdown-item.nav-item.nav-link.active#nav-1-tab(data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true") NGOẠI NGỮ
+                  a.dropdown-item.nav-item.nav-link#nav-2-tab(data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="true") VẬN ĐỘNG TINH
+                  a.dropdown-item.nav-item.nav-link#nav-3-tab(data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3" aria-selected="false") VẬN ĐỘNG THÔ
+                  a.dropdown-item.nav-item.nav-link#nav-4-tab(data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false") GIAO TIẾP &amp; TCXH
 
             .tab-content#nav-tabContent
               <!-- NGOẠI NGỮ -->
               .tab-pane.fade.show.active#nav-1(role="tabpanel", aria-labelledby="nav-1-tab")
-                .profile-bar.card-bg
-                  p.test-question Câu 1/10
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+                .profile-bar.test-bar.card-bg
+                  .test-wrap
+                    p.test-question Câu 1/10
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
 
-                  .test-button
-                    button.test-button__btn Không
-                    button.test-button__btn Thỉnh thoảng
-                    button.test-button__btn Thường xuyên
-                    button.test-button__btn Luôn luôn
+                    .test-button
+                      button.test-button__btn Không
+                      button.test-button__btn Thỉnh thoảng
+                      button.test-button__btn Thường xuyên
+                      button.test-button__btn Luôn luôn
+                  .test-wrap
+                    p.test-question Câu 2/10
+                    .test-answer
+                      .test-answer__wrap
+                        .test-answer__input-wrap
+                          input.test-answer__input(type="radio", id="q1", name="question")
+                        label.test-answer__label(for="q1") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+                      .test-answer__wrap
+                        .test-answer__input-wrap
+                          input.test-answer__input(type="radio", id="q2", name="question")
+                        label.test-answer__label(for="q2") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+                      .test-answer__wrap
+                        .test-answer__input-wrap
+                          input.test-answer__input(type="radio", id="q3", name="question")
+                        label.test-answer__label(for="q3") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
 
-                  p.test-question Câu 2/10
+                  .test-wrap
+                    p.test-question Câu 3/10
+                    .test-question-img
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
 
-                  .test-answer
-                    .test-answer__wrap
-                      input(type="radio", id="male", name="gender").radio-input
-                      label(for="male") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
-                    input(type="radio", id="female", name="gender").radio-input
-                    label(for="female") 女性
+                    .test-button
+                      button.test-button__btn Không
+                      button.test-button__btn Thỉnh thoảng
+                      button.test-button__btn Thường xuyên
+                      button.test-button__btn Luôn luôn
+                h1.profile-titlelist.cl-purple Kết quả bài test
+                .profile-comment.card-bg
+                  .profile-comment__wrapper
+                    i.fa.fa-check
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+                  .profile-comment__wrapper
+                    i.fa.fa-check
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
 
               <!-- VẬN ĐỘNG TINH -->
               .tab-pane.fade#nav-2(role="tabpanel", aria-labelledby="nav-2-tab")
-                .profile-bar.card-bg
+                .profile-bar.test-bar.card-bg
                   p b
 
               <!-- VẬN ĐỘNG THÔ -->
               .tab-pane.fade#nav-3(role="tabpanel", aria-labelledby="nav-3-tab")
-                .profile-bar.card-bg
+                .profile-bar.test-bar.card-bg
                   p c
 
               <!-- GIAO TIẾP -->
               .tab-pane.fade#nav-4(role="tabpanel", aria-labelledby="nav-4-tab")
-                .profile-bar.card-bg
+                .profile-bar.test-bar.card-bg
                   p d
 
           .profile-comment__button

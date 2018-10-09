@@ -1,9 +1,7 @@
 $(function(){
 
-  // $(".header-mobile").slideUp();
   $(".menu-button").on('click', function (event) {
     $(this).toggleClass("is-active");
-    // $(".header-mobile").slideToggle();
     $(".header-mobile").toggleClass('slide-down');
   });
 

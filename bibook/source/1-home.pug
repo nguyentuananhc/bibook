@@ -1,0 +1,298 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+
+doctype html
+html
+  +head
+  body
+    +header-home
+
+    .modal.fade#login(tabindex="-1" role="dialog" aria-hidden="true")
+      .modal-dialog
+        .modal-content
+          .container
+            h1 Đăng nhập
+            .profile-add__input-block
+              .profile-add__title Tài khoản
+              .profile-add__input-wrapper.home-modal__input
+                input.profile-add__input.profile-add__input--name(type="text", placeholder="Tên đăng nhập hoặc Email")
+                span.profile-add__input-icon
+                  i.fa.fa-user
+            .profile-add__input-block
+              .profile-add__title Mật khẩu
+              .profile-add__input-wrapper.home-modal__input
+                input.profile-add__input.profile-add__input--name(type="password", placeholder="Mật khẩu đăng nhập")
+                span.profile-add__input-icon
+                  i.fa.fa-lock
+            button.home-modal__btn Đăng nhập
+
+            p Đăng nhập bằng tài khoản khác
+            button.home-modal__btn
+              span
+                i.fa.fa-facebook
+                | Đăng nhập bằng Facebook
+            button.home-modal__btn
+              span
+                i.fa.fa-google
+                | Đăng nhập bằng Google
+            button.home-modal__btn Đăng ký tài khoản
+
+
+    section.home-banner
+      .container
+        .home-banner__wrapper
+          h1.home-banner__title TẠI SAO NÊN TEST CHO TRẺ
+          .profile-comment.home-comment.home-comment--title-w
+            .profile-comment__wrapper
+              i.fa.fa-check
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .profile-comment__wrapper
+              i.fa.fa-check
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .profile-comment__wrapper
+              i.fa.fa-check
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        .home-banner__pic
+          img.home-banner__img(src="images/home-baby.png", alt="")
+    section.home-step
+      .container
+        .home-step__wrap
+          .home-step__item
+            .home-step__block
+              img.home-step__img(src="images/home-step-1.png", alt="")
+              p Dành ra 5 đến 10 phút để đánh giá quá trình phát triển của con
+            img.home-step__arrow(src="images/home-step-arrow.png", alt="")
+          .home-step__item
+            .home-step__block
+              img.home-step__img(src="images/home-step-2.png", alt="")
+              p Dành ra 5 đến 10 phút để đánh giá quá trình phát triển của con
+            img.home-step__arrow.home-step__arrow--rotate(src="images/home-step-arrow.png", alt="")
+          .home-step__item.home-step__item--break
+            .home-step__block
+              img.home-step__img(src="images/home-step-3.png", alt="")
+              p Dành ra 5 đến 10 phút để đánh giá quá trình phát triển của con
+    section.home-harm
+      .home-harm__div.home-harm__div--green
+        .container
+          .home-harm__block
+            .home-harm__text
+              h1.home-title Trẻ chậm vận động có tác hại như thế nào?
+              .profile-comment.home-comment
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+            .home-harm__pic.mobile-hide
+              .home-harm__wrap
+      img.mobile-show(src="images/home-harm-1.png", alt="")
+      .home-harm__div.home-harm__div--purple
+        .container
+          .home-harm__block
+            .home-harm__pic.mobile-hide
+              .home-harm__wrap
+            .home-harm__text
+              h1.home-title Trẻ chậm phát triển ngôn ngữ có tác hại như thế nào?
+              .profile-comment.home-comment
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+      img.mobile-show(src="images/home-mobile-pic.jpg", alt="")
+      .home-harm__div.home-harm__div--orange
+        .container
+          .home-harm__block
+            .home-harm__text
+              h1.home-title Trẻ châm phát triển giao tiếp và trí thông minh có tác hại như thế nào
+              .profile-comment.home-comment
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+            .home-harm__pic.mobile-hide
+              .home-harm__wrap
+          img.mobile-show(src="images/home-harm-2.png", alt="")
+    section.home-service
+      h1.home-service__title BABY TEST CÓ NHỮNG GÌ
+      .container
+        ul.home-service__nav
+          li.home-service__item.home-service__item--border-left.home-service__item--border-bottom
+            .header-subnav__block
+              .header-subnav__title
+                img(src="images/icon/home-menu-2.png", alt="")
+                h1 Test kỹ năng
+              .profile-comment.home-service__comment.card-bg
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              .profile-list__btn.mobile-hide
+                a(href="#!").profile-list__button.home-service__button Test ngay
+                  span(style="margin-left: 5px;")
+                    i.fa.fa-angle-right(style="margin-right: -4px;")
+                    i.fa.fa-angle-right
+          .mobile-show
+            .home-service__skill
+              a.home-service__skill-item.home-service__skill-item--borderleft(href="#!")
+                img(src="images/icon/home-service-1.png", alt="")
+                h1 Nhận thức
+              a.home-service__skill-item(href="#!")
+                img(src="images/icon/home-menu-3.png", alt="")
+                h1 Ngôn ngữ
+            .home-service__skill
+              a.home-service__skill-item.home-service__skill-item--borderleft(href="#!")
+                img(src="images/icon/home-service-3.png", alt="")
+                h1 Vận động thô
+              a.home-service__skill-item(href="#!")
+                img(src="images/icon/home-service-2.png", alt="")
+                h1 Vận động tinh
+            .home-service__skill
+              a.home-service__skill-item.home-service__skill-item--full(href="#!")
+                img(src="images/icon/home-service-4.png", alt="")
+                h1 Giao tiếp và tình cảm xã hội
+          .profile-list__btn.mobile-show
+            a(href="#!").profile-list__button.home-service__button-mobile Test ngay
+              span(style="margin-left: 5px;")
+                i.fa.fa-angle-right(style="margin-right: -4px;")
+                i.fa.fa-angle-right
+          li.home-service__item.home-service__item--border-left.home-service__item--border-bottom
+            .header-subnav__block
+              .header-subnav__title
+                img(src="images/icon/home-menu-3.png", alt="")
+                h1 Test ngôn ngữ
+              .profile-comment.home-service__comment.card-bg
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              .profile-list__btn.mobile-hide
+                a(href="#!").profile-list__button.home-service__button Test ngay
+                  span(style="margin-left: 5px;")
+                    i.fa.fa-angle-right(style="margin-right: -4px;")
+                    i.fa.fa-angle-right
+          .profile-list__btn.mobile-show
+            a(href="#!").profile-list__button.home-service__button-mobile Test ngay
+              span(style="margin-left: 5px;")
+                i.fa.fa-angle-right(style="margin-right: -4px;")
+                i.fa.fa-angle-right
+          li.home-service__item.home-service__item--border-bottom
+            .header-subnav__block
+              .header-subnav__title
+                img(src="images/icon/home-menu-1.png", alt="")
+                h1 Test IQ
+              .profile-comment.home-service__comment.card-bg
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              .profile-list__btn.mobile-hide
+                a(href="#!").profile-list__button.home-service__button Test ngay
+                  span(style="margin-left: 5px;")
+                    i.fa.fa-angle-right(style="margin-right: -4px;")
+                    i.fa.fa-angle-right
+          .profile-list__btn.mobile-show
+            a(href="#!").profile-list__button.home-service__button-mobile Test ngay
+              span(style="margin-left: 5px;")
+                i.fa.fa-angle-right(style="margin-right: -4px;")
+                i.fa.fa-angle-right
+        ul.home-service__nav
+          li.home-service__item.home-service__item--border-left
+            .header-subnav__block
+              .header-subnav__title
+                img(src="images/icon/home-menu-5.png", alt="")
+                h1 Test EQ
+              .profile-comment.home-service__comment.card-bg
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              .profile-list__btn.mobile-hide
+                a(href="#!").profile-list__button.home-service__button Test ngay
+                  span(style="margin-left: 5px;")
+                    i.fa.fa-angle-right(style="margin-right: -4px;")
+                    i.fa.fa-angle-right
+          .profile-list__btn.mobile-show
+            a(href="#!").profile-list__button.home-service__button-mobile Test ngay
+              span(style="margin-left: 5px;")
+                i.fa.fa-angle-right(style="margin-right: -4px;")
+                i.fa.fa-angle-right
+
+          li.home-service__item.home-service__item--border-left
+            .header-subnav__block
+              .header-subnav__title
+                img(src="images/icon/home-menu-4.png", alt="")
+                h1 Test tính cách
+              .profile-comment.home-service__comment.card-bg
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              .profile-list__btn.mobile-hide
+                a(href="#!").profile-list__button.home-service__button Test ngay
+                  span(style="margin-left: 5px;")
+                    i.fa.fa-angle-right(style="margin-right: -4px;")
+                    i.fa.fa-angle-right
+          .profile-list__btn.mobile-show
+            a(href="#!").profile-list__button.home-service__button-mobile Test ngay
+              span(style="margin-left: 5px;")
+                i.fa.fa-angle-right(style="margin-right: -4px;")
+                i.fa.fa-angle-right
+
+          li.home-service__item
+            .header-subnav__block
+              .header-subnav__title
+                img(src="images/icon/home-menu-6.png", alt="")
+                h1 Test vận động
+              .profile-comment.home-service__comment.card-bg
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .profile-comment__wrapper
+                  i.fa.fa-check
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              .profile-list__btn.mobile-hide
+                a(href="#!").profile-list__button.home-service__button Test ngay
+                  span(style="margin-left: 5px;")
+                    i.fa.fa-angle-right(style="margin-right: -4px;")
+                    i.fa.fa-angle-right
+          .profile-list__btn.mobile-show
+            a(href="#!").profile-list__button.home-service__button-mobile Test ngay
+              span(style="margin-left: 5px;")
+                i.fa.fa-angle-right(style="margin-right: -4px;")
+                i.fa.fa-angle-right
+    +footer
+    script(src="js/main.js")
