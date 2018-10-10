@@ -8,35 +8,38 @@ html
   body
     +header-home
 
-    .modal.fade#login(tabindex="-1" role="dialog" aria-hidden="true")
-      .modal-dialog
-        .modal-content
+    .home-modal.modal.fade#login(tabindex="-1" role="dialog" aria-hidden="true")
+      .modal-dialog.home-modal__dialog
+        .modal-content.home-modal__content
           .container
-            h1 Đăng nhập
-            .profile-add__input-block
+            h1.home-modal__header Đăng nhập
+            .profile-add__input-block.home-modal__input
               .profile-add__title Tài khoản
               .profile-add__input-wrapper.home-modal__input
                 input.profile-add__input.profile-add__input--name(type="text", placeholder="Tên đăng nhập hoặc Email")
                 span.profile-add__input-icon
                   i.fa.fa-user
-            .profile-add__input-block
+            .profile-add__input-block.home-modal__input
               .profile-add__title Mật khẩu
               .profile-add__input-wrapper.home-modal__input
                 input.profile-add__input.profile-add__input--name(type="password", placeholder="Mật khẩu đăng nhập")
                 span.profile-add__input-icon
                   i.fa.fa-lock
+            .home-modal__forget
+              .home-modal__check-wrap
+                input.home-modal__checkbox(type="checkbox", id="forget")
+              label.home-modal__label(for="forget") Quên mật khẩu
             button.home-modal__btn Đăng nhập
-
             p Đăng nhập bằng tài khoản khác
-            button.home-modal__btn
-              span
+            button.home-modal__btn.home-modal__btn--social.bg-fb
+              span.home-modal__btn-icon
                 i.fa.fa-facebook
-                | Đăng nhập bằng Facebook
-            button.home-modal__btn
-              span
+              span.home-modal__btn-text(style="margin-left: 38px;") Đăng nhập bằng Facebook
+            button.home-modal__btn.home-modal__btn--social.bg-gg
+              span.home-modal__btn-icon
                 i.fa.fa-google
-                | Đăng nhập bằng Google
-            button.home-modal__btn Đăng ký tài khoản
+              span.home-modal__btn-text Đăng nhập bằng Google
+            button.home-modal__btn.home-modal__btn--regis Đăng ký tài khoản
 
 
     section.home-banner
