@@ -12,29 +12,32 @@ html
       .modal-dialog.home-modal__dialog
         .modal-content.home-modal__content
           .container
+            button.home-modal__btnclose.mobile-show(type="button", data-dismiss="modal", aria-label="Close")
+              span(aria-hidden="true")
+                i.fa.fa-times(style="font-size: 20px;")
             h1.home-modal__header Đăng nhập
             .profile-add__input-block.home-modal__input
               .profile-add__title Tài khoản
               .profile-add__input-wrapper.home-modal__input
-                input.profile-add__input.profile-add__input--name(type="text", placeholder="Tên đăng nhập hoặc Email")
+                input.profile-add__input.profile-add__input--name.home-modal__ip(type="text", placeholder="Tên đăng nhập hoặc Email")
                 span.profile-add__input-icon
                   i.fa.fa-user
             .profile-add__input-block.home-modal__input
               .profile-add__title Mật khẩu
               .profile-add__input-wrapper.home-modal__input
-                input.profile-add__input.profile-add__input--name(type="password", placeholder="Mật khẩu đăng nhập")
+                input.profile-add__input.profile-add__input--name.home-modal__ip(type="password", placeholder="Mật khẩu đăng nhập")
                 span.profile-add__input-icon
                   i.fa.fa-lock
             .home-modal__forget
-              .home-modal__check-wrap
-                input.home-modal__checkbox(type="checkbox", id="forget")
-              label.home-modal__label(for="forget") Quên mật khẩu
+              label.form-check-label.popup__label.home-modal__forget-label
+                input.form-check-input.popup__input.home-modal__forget-input(type="checkbox", value="")
+                span.popup__label-text.home-modal__forget-text Quên mật khẩu?
             button.home-modal__btn Đăng nhập
             p Đăng nhập bằng tài khoản khác
             button.home-modal__btn.home-modal__btn--social.bg-fb
               span.home-modal__btn-icon
                 i.fa.fa-facebook
-              span.home-modal__btn-text(style="margin-left: 38px;") Đăng nhập bằng Facebook
+              span.home-modal__btn-text(style="margin-left: 15px;") Đăng nhập bằng Facebook
             button.home-modal__btn.home-modal__btn--social.bg-gg
               span.home-modal__btn-icon
                 i.fa.fa-google
@@ -88,13 +91,13 @@ html
                 .profile-comment__wrapper
                   i.fa.fa-check
                   p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
-            .home-harm__pic.mobile-hide
+            .home-harm__pic.tablet-hide
               .home-harm__wrap
-      img.mobile-show(src="images/home-harm-1.png", alt="")
+      img.tablet-show(src="images/home-harm-1.png", alt="")
       .home-harm__div.home-harm__div--purple
         .container
           .home-harm__block
-            .home-harm__pic.mobile-hide
+            .home-harm__pic.tablet-hide
               .home-harm__wrap
             .home-harm__text
               h1.home-title Trẻ chậm phát triển ngôn ngữ có tác hại như thế nào?
@@ -105,12 +108,12 @@ html
                 .profile-comment__wrapper
                   i.fa.fa-check
                   p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
-      img.mobile-show(src="images/home-mobile-pic.jpg", alt="")
+      img.tablet-show(src="images/home-mobile-pic.jpg", alt="")
       .home-harm__div.home-harm__div--orange
         .container
           .home-harm__block
             .home-harm__text
-              h1.home-title Trẻ châm phát triển giao tiếp và trí thông minh có tác hại như thế nào
+              h1.home-title Trẻ chậm phát triển giao tiếp và trí thông minh có tác hại như thế nào
               .profile-comment.home-comment
                 .profile-comment__wrapper
                   i.fa.fa-check
@@ -118,9 +121,9 @@ html
                 .profile-comment__wrapper
                   i.fa.fa-check
                   p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
-            .home-harm__pic.mobile-hide
+            .home-harm__pic.tablet-hide
               .home-harm__wrap
-          img.mobile-show(src="images/home-harm-2.png", alt="")
+          img.home-harm__img.tablet-show(src="images/home-harm-2.png", alt="")
     section.home-service
       h1.home-service__title BABY TEST CÓ NHỮNG GÌ
       .container

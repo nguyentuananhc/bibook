@@ -95,13 +95,15 @@ html
 
               a.nav-item.nav-link.test-nav__link.mobile-hide#nav-4-tab(data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false") GIAO TIẾP &amp; TCXH
 
-              .dropdown.mobile-show
-                button.btn.btn-secondary.dropdown-toggle#dropdownMenuOffset(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") la
-                .dropdown-menu(aria-labelledby="dropdownMenuOffset")
-                  a.dropdown-item.nav-item.nav-link.active#nav-1-tab(data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true") NGOẠI NGỮ
-                  a.dropdown-item.nav-item.nav-link#nav-2-tab(data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="true") VẬN ĐỘNG TINH
-                  a.dropdown-item.nav-item.nav-link#nav-3-tab(data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3" aria-selected="false") VẬN ĐỘNG THÔ
-                  a.dropdown-item.nav-item.nav-link#nav-4-tab(data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false") GIAO TIẾP &amp; TCXH
+              .dropdown.test-dropdown.mobile-show
+                .test-dropdown__wrap
+                  p.test-dropdown__title.text-bold NGÔN NGỮ
+                  button.dropdown-toggle.test-dropdown__btn#dropdownMenuOffset(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Đổi nội dung
+                  .dropdown-menu.test-dropdown__menu(aria-labelledby="dropdownMenuOffset")
+                    a.dropdown-item.nav-item.nav-link.active.dropdown-test#nav-1-tab(data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true") NGOẠI NGỮ
+                    a.dropdown-item.nav-item.nav-link.dropdown-test#nav-2-tab(data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="true") VẬN ĐỘNG TINH
+                    a.dropdown-item.nav-item.nav-link.dropdown-test#nav-3-tab(data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3" aria-selected="false") VẬN ĐỘNG THÔ
+                    a.dropdown-item.nav-item.nav-link.dropdown-test#nav-4-tab(data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false") GIAO TIẾP &amp; TCXH
 
             .tab-content#nav-tabContent
               <!-- NGOẠI NGỮ -->

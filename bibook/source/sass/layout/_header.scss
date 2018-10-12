@@ -10,6 +10,10 @@ header {
     flex-direction: column;
     display: block;
   }
+
+  @include respond-to ('phone-and-down') {
+    height: 70px;
+  }
 }
 
 .header-wrapper {
@@ -38,8 +42,18 @@ header {
     margin-bottom: 0;
     margin-left: 10px;
 
+    &:hover {
+      color: $white;
+    }
+
     @include respond-to ('tablet-and-down') {
       font-size: 20px;
+    }
+  }
+
+  img {
+    @include respond-to ('phone-and-down') {
+      width: 20%;
     }
   }
 }
@@ -306,7 +320,7 @@ header {
   }
 
   &__top-w {
-    height: 100px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -314,8 +328,8 @@ header {
   }
 
   &__login {
-    width: 140px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     background-color: $purple-2;
     color: $white;
     display: flex;
@@ -330,11 +344,11 @@ header {
 
   &__item {
     border-bottom: 1px solid $grey;
-    padding: 15px 0;
+    padding: 10px 0;
   }
 
   &__h1 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     display: inline;
   }
@@ -348,5 +362,11 @@ header {
     margin-top: 5px;
     color: $grey-3;
     float: right;
+  }
+
+  &__lang {
+    img {
+      margin-left: 5px;
+    }
   }
 }

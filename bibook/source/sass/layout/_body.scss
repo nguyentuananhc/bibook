@@ -72,6 +72,10 @@ a {
   color: $purple;
 }
 
+.text-bold {
+  font-weight: 700;
+}
+
 .breadcrumb-custom {
 
   @include respond-to ('phone-and-down') {

@@ -15,11 +15,14 @@ function chart(x, name) {
   chart.style.strokeDasharray = (percent * circumference) + ' ' + circumference;
 }
 
+//dropdown-test
+$('.dropdown-test').click(function(event) {
+  $(this).siblings().removeClass('active')
+});
+
 chart(0.5, "skill");
 chart(0.6, "iq");
 chart(0.7, "eq");
-
-
 
 //line-chart
   var ctx = document.getElementById("mychart");
