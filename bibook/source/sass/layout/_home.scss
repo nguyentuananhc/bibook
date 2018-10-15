@@ -220,6 +220,10 @@
   }
 
   &__img {
+    @include respond-to ('desktop-and-down') {
+      max-width: 60%;
+    }
+
     @include respond-to ('tablet-and-down') {
       max-width: 50%;
     }
@@ -237,6 +241,11 @@
     position: absolute;
     right: 0;
     top: 15px;
+
+    @include respond-to ('desktop-and-down') {
+      text-align: right;
+      top: 160px;
+    }
 
     @include respond-to ('tablet-and-down') {
       width: 100%;
@@ -409,6 +418,11 @@
     @include respond-to ('phone-and-down') {
       margin: 0;
     }
+
+    &--right {
+      margin-left: 40px;
+      margin-right: 0;
+    }
   }
 
   &__img {
@@ -418,6 +432,7 @@
 }
 
 .home-service {
+  margin-top: 50px;
 
   @include respond-to ('tablet-and-down') {
     margin-top: 25px;

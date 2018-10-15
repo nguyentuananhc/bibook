@@ -17,6 +17,10 @@
     padding: 20px 0;
     background-color: $white;
 
+    &:hover {
+      border-color: transparent !important;
+    }
+
     &.active {
       background-color: $purple !important;
       color: $white !important;
@@ -180,5 +184,12 @@
 
   &__menu {
     width: 100%;
+    transform: none !important;
+    position: absolute;
+    top: 47px !important;
+  }
+
+  &__link {
+    border: 0 !important;
   }
 }
